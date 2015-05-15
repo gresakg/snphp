@@ -1,5 +1,12 @@
 <?php 
 
+echo metri_v_centimetre(5);
+
+function metri_v_centimetre($metri) {
+	$centimetri = $metri*100;
+	return $metri . " metrov je " . $centimetri . " centimetrov";
+} 
+
 for($i=1;$i<6;$i=$i+1) {
 	echo $i;
 	echo "<br>";
@@ -20,8 +27,6 @@ $seznam = array(
 	"leto"=>1966
 );
 $seznam["spol"] = "moški";
-
-
 echo "<h1>".$seznam["ime"]."</h1>";
 
 foreach($seznam as $key => $item) {
