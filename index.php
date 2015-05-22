@@ -19,7 +19,7 @@ if(isset($_POST['stevilo'])) {
 } else {
 	//obrazec ni oddan
 	$stevilo = "";
-	$skrito = rand(1,5);
+	$skrito = rand(1,39);
 	$stevec = 0;
 }
 ?>

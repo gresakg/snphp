@@ -1,5 +1,11 @@
 <?php 
 
+$polje = array("banana", "jabolko");
+
+$polje[] = "zelje";
+
+
+
 echo metri_v_centimetre(5);
 
 function metri_v_centimetre($metri) {

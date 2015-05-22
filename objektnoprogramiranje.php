@@ -11,9 +11,21 @@ echo "<br>";
 
 $kuhna = new Restaurant("Domača Kuhna","Gornji dol", 10);
 
+
+$kuhna->dodajNatakarja("Janez");
+$kuhna->dodajNatakarja("Kristina");
+$kuhna->dodajNatakarja("Oton");
+$kuhna->dodajNatakarja("Karl");
+
+echo $kuhna->izpisNatakarjev();
+
+
+
 $spajza = new Restaurant("Špajza","Spodnji log", 8);
 
 $mcdonalds = new fastFood("mcDonalds", "Ljubljana",22);
+
+
 
 $mcdonalds->naslov();br();
 $mcdonalds->hasDriveIn();
@@ -40,7 +52,7 @@ class Restaurant {
     public $city;
     public $tables;
 	public $kontakt;
-	public $natakarji = array("peter");
+	public $natakarji = array();
 	public $stNatakarjev;
 
     public function __construct($name, $city, $tables) {
@@ -66,6 +78,17 @@ class Restaurant {
 	public function dodajNatakarja($ime) {
 		$this->natakarji[] = $ime;
 		$this->stNatakarjev++;
+	}
+	
+	public function izpisNatakarjev() {
+		$out = "<ul>";
+		
+		foreach($this->natakarji as $natakar){
+			$out .= "<li>".$natakar."</li>" ;
+		}
+		
+		$out .= "</ul>";
+		return $out;
 	}
 
     
