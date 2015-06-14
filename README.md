@@ -1,3 +1,8 @@
+# Important note
+
+This repo is not a project. It's just some random samples that I use in my php classes. If you are not my student it is probably useless to you and it's definitely irrelevant.
+
+
 ## Naloga
 
 Uporabi metodo dodajNatakarja(); s katero boš dodal nekaj natakarjev.
